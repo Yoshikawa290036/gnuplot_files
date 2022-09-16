@@ -19,4 +19,5 @@ rm ${fname}-inc.eps
 
 # convert ${fname}.png -trim ${fname}.png
 
+# mv ${fname}.eps  image/${fname}.eps
 mv ${fname}.png  image/${fname}.png
