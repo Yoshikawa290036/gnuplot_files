@@ -73,27 +73,8 @@ set xlabel '{\Large $x$ [-]}'
 set ylabel '{\Large $y$ [-]}'
 set cblabel '{\Large $C$ [-]}'
 
-adj = 0.3
-ev = 4
-
-# set dgrid3d 10,10,splines
-
-
-# set parametric
-# plot \
-# cos(t) linecolor 'black' linewidth 4,\
-# sin(t) linecolor 'black' linewidth 4,\
-# rmax*cos(t) linecolor 'black' linewidth 4,\
-# rmax*sin(t) linecolor 'black' linewidth 4
-# unset parametric
-
-
 splot \
 infile using ($1):($2):($3) with pm3d
-# infile using ($1):(-$2):($3) with pm3d,\
-
-# infile using ($1):($2):($1-$1):($3*adj):($4*adj):($1-$1):(sqrt($3*$3+$4*$4)) every ev:ev with vector linecolor 'black' linewidth 2.4 title ""
-
 
 unset multiplot
 reset
