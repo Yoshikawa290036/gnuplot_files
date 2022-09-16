@@ -25,23 +25,7 @@ set terminal epslatex standalone header \
 \\usepackage{amssymb, amsmath, bm}\n\
 \\usepackage{siunitx}\n \
 "
-# " \
-# \\usepackage{amssymb, amsmath, bm}\n \
-# \\usepackage{arev}\n \
-# \\usepackage[]{arevmath}\n \
-# \\usepackage{textcomp}\n \
-# \\usepackage{siunitx}\n \
-# \\DeclareMathSymbol{I}{\\mathalpha}{extraitalic}{30}\n \
-# \\DeclareMathSymbol{a}{\\mathalpha}{extraitalic}{50}\n \
-# \\DeclareMathSymbol{f}{\\mathalpha}{extraitalic}{55}\n \
-# \\DeclareMathSymbol{i}{\\mathalpha}{extraitalic}{58}\n \
-# \\DeclareMathSymbol{l}{\\mathalpha}{extraitalic}{61}\n \
-# \\DeclareMathSymbol{u}{\\mathalpha}{extraitalic}{70}\n \
-# \\DeclareMathSymbol{v}{\\mathalpha}{extraitalic}{71}\n \
-# \\DeclareMathSymbol{w}{\\mathalpha}{extraitalic}{72}\n \
-# \\DeclareMathSymbol{x}{\\mathalpha}{extraitalic}{73}\n \
-# \\sisetup{math-micro={\\usefont{T1}{phv}{m}{n}\\text{\\textmu}}}\n \
-# "
+
 set terminal epslatex size 3.7,1.355 standalone color solid 9
 
 
@@ -124,10 +108,6 @@ adj = 1.5
 
 splot infile4 using ($1):($2 - inner):($2*$5) with pm3d title "",\
 infile4 using ($1):($2 - inner):($1-$1):($3*1.0):($4*1.0):($1-$1):(sqrt($3*$3+$4*$4)) every 8:8 with vector linecolor 'black' linewidth 2.4 title ""
-
-
-# splot infile8 using ($1):($2 - inner):($2*$5) with pm3d title "",\
-# infil84 using ($1):($2 - inner):($1-$1):($3*1.0):($4*1.0):($1-$1):(sqrt($3*$3+$4*$4)) every 8:8 with vector linecolor 'black' linewidth 2.4 title ""
 
 
 unset multiplot

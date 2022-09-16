@@ -3,14 +3,12 @@ set encoding utf8
 
 set terminal postscript enhanced eps size 7.2,2.2 color
 
-
 # ------------------------------ #
 
 # infile='data/2_0REC/mode00_uvw_pod_0060000'
 # outfile='tttt9'
 
 # ------------------------------ #
-
 
 inp = sprintf("%s.csv", infile)
 out01 = sprintf("%s.eps", outfile)
@@ -29,18 +27,6 @@ set xrange [0:4]
 set yrange [0:1]
 set cbrange[0:0.15]
 
-# set xlabel '{/Arial-Italic r} {[-]}'
-#set ylabel '{/Symbol-Oblique m_l/m}_{l,0}{[-]}'
-# set ylabel '{/Arial-Italic z} {[-]}'
-# set cblabel '{/Arial angular momentum} {[-]}'
-# set rmargin 10
-# set lmargin 1
-# set tmargin 1
-
-#set zlabel 'eta'
-#タイトル文字の設定
-#set title "α_s(0)=0.50"
-#タイトルのフォント設定
 set title font"Arial,15"
 set xlabel font "Arial,30"
 set ylabel font "Arial,30"
@@ -50,11 +36,6 @@ set tics font "Arial,25"
 #keyは凡例
 set key font"Arial,15"
 unset key
-# ラベルの位置
-# set xlabel offset 0,1
-# set ylabel offset -3,-1
-# set zlabel offset 0,1
-# set cblabel offset 3,-1
 
 set xtics 1
 set ytics 0.5

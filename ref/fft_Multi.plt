@@ -75,7 +75,6 @@ set format '$%g$'
 
 set size ratio 0.4
 
-####################################################################################################
 
 set lmargin screen 0.12
 set rmargin screen 0.99
@@ -83,14 +82,10 @@ set rmargin screen 0.99
 set tmargin screen 0.98
 set bmargin screen 0.68
 
-####################################################################################################
 
 set key width 0.5 box opaque spacing 1.1 samplen 1 Left reverse
 set key right top
 
-
-
-####################################################################################################
 
 set label 31 at graph 0.02,1.08 '(a)~$Re^* = 4$' front
 
@@ -115,9 +110,7 @@ m2_4 u 3:($4*$4) w line ls 102 title 'mode2' ,\
 m3_4 u 3:($4*$4) w line ls 103 title 'mode3' ,\
 m4_4 u 3:($4*$4) w line ls 104 title 'mode4' ,\
 m5_4 u 3:($4*$4) w line ls 105 title 'mode5' ,\
-# infile4 using :6:1 with lines ls 106 title '\Large mode $6$' ,\
 
-#################################################################################
 
 set label 31 at graph 0.02,1.08 '(b)~$Re^* = 6$' front
 
@@ -132,10 +125,6 @@ m2_6 u 3:($4*$4) w line ls 102 title 'mode2' ,\
 m3_6 u 3:($4*$4) w line ls 103 title 'mode3' ,\
 m4_6 u 3:($4*$4) w line ls 104 title 'mode4' ,\
 m5_6 u 3:($4*$4) w line ls 105 title 'mode5' ,\
-# infile6 using :6:1 with lines ls 106 title '\Large mode $6$' ,\
-
-
-#################################################################################
 
 
 set label 31 at graph 0.02,1.08 '(c)~$Re^* = 8$' front
@@ -146,20 +135,12 @@ set bmargin screen 0.06
 
 set xlabel '{\Large $f$~$[1/S]$}'
 
-# set key width 0 box opaque spacing 1.1 samplen 0.7 Left reverse
-# set key outside
-
 plot \
 m1_8 u 3:($4*$4) w line ls 101 title 'mode1' ,\
 m2_8 u 3:($4*$4) w line ls 102 title 'mode2' ,\
 m3_8 u 3:($4*$4) w line ls 103 title 'mode3' ,\
 m4_8 u 3:($4*$4) w line ls 104 title 'mode4' ,\
 m5_8 u 3:($4*$4) w line ls 105 title 'mode5' ,\
-# infile8 using :6:1 with lines ls 106 title '\Large mode $6$' ,\
-
-
-#################################################################################
-
 
 unset multiplot
 reset

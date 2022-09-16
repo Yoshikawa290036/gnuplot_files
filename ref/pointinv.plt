@@ -20,23 +20,7 @@ set terminal epslatex standalone header \
 \\usepackage{amssymb, amsmath, bm}\n\
 \\usepackage{siunitx}\n \
 "
-# " \
-# \\usepackage{amssymb, amsmath, bm}\n \
-# \\usepackage{arev}\n \
-# \\usepackage[]{arevmath}\n \
-# \\usepackage{textcomp}\n \
-# \\usepackage{siunitx}\n \
-# \\DeclareMathSymbol{I}{\\mathalpha}{extraitalic}{30}\n \
-# \\DeclareMathSymbol{a}{\\mathalpha}{extraitalic}{50}\n \
-# \\DeclareMathSymbol{f}{\\mathalpha}{extraitalic}{55}\n \
-# \\DeclareMathSymbol{i}{\\mathalpha}{extraitalic}{58}\n \
-# \\DeclareMathSymbol{l}{\\mathalpha}{extraitalic}{61}\n \
-# \\DeclareMathSymbol{u}{\\mathalpha}{extraitalic}{70}\n \
-# \\DeclareMathSymbol{v}{\\mathalpha}{extraitalic}{71}\n \
-# \\DeclareMathSymbol{w}{\\mathalpha}{extraitalic}{72}\n \
-# \\DeclareMathSymbol{x}{\\mathalpha}{extraitalic}{73}\n \
-# \\sisetup{math-micro={\\usefont{T1}{phv}{m}{n}\\text{\\textmu}}}\n \
-# "
+
 set terminal epslatex size 3.7,1. standalone color solid 9
 
 
@@ -98,17 +82,6 @@ set xlabel '{\Large $t$ [-]}'
 set format y '$%g$'
 set ylabel '{\Large $a^{(n)}$ [-]}'
 
-# set cblabel '{\Large $ru_\theta $[-]}'
-
-# set palette defined (0 '#ffffff', 1 '#00008b', 2 '#2ca9e1', 3 '#008000', 4 '#c8c800', 5 '#ff0000', 6 '#ff00ff')
-
-
-
-# set view map
-# set pm3d
-# set palette rgbformulae 22,13,-31
-
-# set key spacing 1.1 samplen 1 Left reverse
 unset key
 set key outside
 
@@ -127,15 +100,6 @@ infile using :3:1 with lines ls 103 title '\Large mode $3$' ,\
 infile using :4:1 with lines ls 104 title '\Large mode $4$' ,\
 infile using :5:1 with lines ls 105 title '\Large mode $5$' ,\
 # infile using :6:1 with lines ls 106 title '\Large mode $6$' ,\
-
-
-# plot \
-# infile using :1:1 with lines ls 101 title '' ,\
-# infile using :2:1 with lines ls 102 title '' ,\
-# infile using :3:1 with lines ls 103 title '' ,\
-# infile using :4:1 with lines ls 104 title '' ,\
-# infile using :5:1 with lines ls 105 title '' ,\
-# infile using :6:1 with lines ls 106 title '' ,\
 
 
 set key nobox

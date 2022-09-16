@@ -17,9 +17,6 @@ if (!exists("fname")) fname='test'
 oname = sprintf("%s.tex", fname)
 set output oname
 
-# rec = "04REC"
-# tstep = 70000
-
 infile1=sprintf("data/%s/mode01_pod_%07d.csv",rec,tstep)
 infile2=sprintf("data/%s/mode02_pod_%07d.csv",rec,tstep)
 infile3=sprintf("data/%s/mode03_pod_%07d.csv",rec,tstep)
@@ -83,11 +80,6 @@ set style fill solid 10
 # set palette rgbformulae 22,0,-31
 set view map
 set pm3d
-# set pm3d interpolate 3,3
-
-# set palette defined (0 '#ffffff', 1 '#00008b', 2 '#2ca9e1', 3 '#008000', 4 '#c8c800', 5 '#ff0000', 6 '#ff00ff')
-
-# set pm3d interpolate 10, 10
 
 adj = 3.0
 ev = 25
@@ -202,7 +194,6 @@ set format x '$%.1f$'
 splot \
 PM3D using ($1):($2 - inner):(sqrt($4*$4+$5*$5)) with pm3d title '' ,\
 infile6 every ev:ev:3 using ($1/64):(($2-0.111111)/64):($1-$1):($4*adj):($5*adj):($1-$1):(sqrt($4*$4+$5*$5)) with vectors linecolor "black" linewidth 3 title ""
-
 
 
 

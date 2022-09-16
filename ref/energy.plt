@@ -4,9 +4,6 @@
 
 # ------------------------- #
 
-# infile = sprintf('datas/%s/energy.csv',dirname)
-# out01 = sprintf('%s.tex', dirname)
-# out02 = sprintf('%s.png', dirname)
 
 ifile0="data/4_0REC/energy.csv"
 
@@ -21,11 +18,6 @@ ifile7="data/energy/5_7REC.csv"
 ifile8="data/energy/5_8REC.csv"
 ifile9="data/energy/5_9REC.csv"
 
-
-
-
-
-
 out01 = sprintf('%s.tex', fname)
 out02 = sprintf('%s.png', fname)
 
@@ -36,23 +28,6 @@ set terminal epslatex standalone header \
 \\usepackage{amssymb, amsmath, bm}\n\
 \\usepackage{siunitx}\n \
 "
-# " \
-# \\usepackage{amssymb, amsmath, bm}\n \
-# \\usepackage{arev}\n \
-# \\usepackage[]{arevmath}\n \
-# \\usepackage{textcomp}\n \
-# \\usepackage{siunitx}\n \
-# \\DeclareMathSymbol{I}{\\mathalpha}{extraitalic}{30}\n \
-# \\DeclareMathSymbol{a}{\\mathalpha}{extraitalic}{50}\n \
-# \\DeclareMathSymbol{f}{\\mathalpha}{extraitalic}{55}\n \
-# \\DeclareMathSymbol{i}{\\mathalpha}{extraitalic}{58}\n \
-# \\DeclareMathSymbol{l}{\\mathalpha}{extraitalic}{61}\n \
-# \\DeclareMathSymbol{u}{\\mathalpha}{extraitalic}{70}\n \
-# \\DeclareMathSymbol{v}{\\mathalpha}{extraitalic}{71}\n \
-# \\DeclareMathSymbol{w}{\\mathalpha}{extraitalic}{72}\n \
-# \\DeclareMathSymbol{x}{\\mathalpha}{extraitalic}{73}\n \
-# \\sisetup{math-micro={\\usefont{T1}{phv}{m}{n}\\text{\\textmu}}}\n \
-# "
 
 set terminal epslatex size 2.5,2.3 standalone color solid 9
 
@@ -124,40 +99,12 @@ adj = 1.5
 # set label 1 at graph 0,1.1 "aiueo" font "Times-Roman, 24"
 f9(x)=0.9
 
-# plot \
-# ifile0 using 1:6:2 with linespoints ls 102  pt 6  ps 0.8  title '\Large $Re^* = 4$',\
-# f9(x) with lines lc "black" lw 2 title ''
-
-
 plot \
 ifile0 using 1:5:2 with linespoints ls 102  pt 6  ps 0.8  title '',\
 f9(x) with lines lc "black" lw 2 title ''
 
 
 
-# ifile1 using 1:5:2 with linespoints ls 101  pt 4   title '\Large $Re = 5.1 Re_c$',\
-# ifile2 using 1:5:2 with linespoints ls 102  pt 6   title '\Large $Re = 5.2 Re_c$',\
-# ifile3 using 1:5:2 with linespoints ls 103  pt 8   title '\Large $Re = 5.3 Re_c$',\
-# ifile4 using 1:5:2 with linespoints ls 104  pt 10  title '\Large $Re = 5.4 Re_c$',\
-# ifile5 using 1:5:2 with linespoints ls 105  pt 12  title '\Large $Re = 5.5 Re_c$',\
-# ifile6 using 1:5:2 with linespoints ls 106  pt 14  title '\Large $Re = 5.6 Re_c$',\
-# ifile7 using 1:5:2 with linespoints ls 107  pt 1   title '\Large $Re = 5.7 Re_c$',\
-# ifile8 using 1:5:2 with linespoints ls 108  pt 3   title '\Large $Re = 5.8 Re_c$',\
-# ifile9 using 1:5:2 with linespoints ls 109  pt 79  title '\Large $Re = 5.9 Re_c$',\
-
-
-# infile4 using 1:5:3 with linespoints  ls 101 pt 4 ps 1.5 lw 4  title '\Large $Re = 4 Re_c$',\
-# infile5 using 1:5:3 with linespoints ls 102 pt 4 ps 1.5 lw 4  title '\Large $Re = 5 Re_c$',\
-# infile6 using 1:5:3 with linespoints ls 103 pt 10 ps 1.5 lw 4  title '\Large $Re = 6 Re_c$',\
-# infile7 using 1:5:3 with linespoints ls 105 pt 4 ps 1.5 lw 4  title '\Large $Re = 7 Re_c$',\
-# infile8 using 1:5:3 with linespoints  ls 106 pt 8 ps 1.5 lw 4  title '\Large $Re = 8 Re_c$',\
-# infile9 using 1:5:3 with linespoints ls 107 pt 4 ps 1.5 lw 4  title '\Large $Re = 9 Re_c$',\
-# infile10 using 1:5:3 with linespoints ls 104 pt 10 ps 1.5 lw 4  title '\Large $Re = 10 Re_c$',\
-
-# infile7 using 1:5:3 with linespoints  ls 102 pt 6 ps 1.5 lw 4  title '\Large $Re = 7 Re_c$',\
-
-
-####################################################################################################
 
 unset multiplot
 reset

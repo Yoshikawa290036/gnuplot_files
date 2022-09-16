@@ -83,10 +83,6 @@ set style fill solid 10
 set palette rgbformulae 22,13,-31
 set view map
 set pm3d
-# set pm3d interpolate 3,3
-
-# set palette defined (0 '#ffffff', 1 '#00008b', 2 '#2ca9e1', 3 '#008000', 4 '#c8c800', 5 '#ff0000', 6 '#ff00ff')
-
 
 adj = 3.0
 ev = 25
@@ -103,10 +99,6 @@ set bmargin screen 0.83
 set key width 0.5 box opaque spacing 1.1 samplen 1 Left reverse
 set key right bottom
 unset key
-
-
-
-####################################################################################################
 
 set label 31 at graph 0.02,1.12 '(a)~mode1' front
 
@@ -201,8 +193,6 @@ set format x '$%.1f$'
 splot \
 PM3D using ($1):($2 - inner):($6*$2) with pm3d title '' ,\
 infile6 every ev:ev:3 using ($1/64):(($2-0.111111)/64):($1-$1):($4*adj):($5*adj):($1-$1):(sqrt($4*$4+$5*$5)) with vectors linecolor "black" linewidth 3 title ""
-
-
 
 
 unset multiplot

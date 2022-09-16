@@ -69,25 +69,9 @@ set mytics 5
 set xlabel '{\Large $f$~$[1/S]$}'
 set ylabel '{\Large $\widehat{a}^{(n)^2}$[-]}'
 
-####################################################################################################
-
-# set lmargin screen 0.1
-# set rmargin screen 0.78
-
-# set tmargin screen 1
-# set bmargin screen 0.01
-
-####################################################################################################
 
 set key width 0.5 box opaque spacing 1.1 samplen 1 Left reverse
 set key right top
-
-
-
-
-####################################################################################################
-
-# set label 31 at graph 0.02,1.12 '(a)~mode1' front
 
 
 set size ratio 0.4

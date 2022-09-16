@@ -17,8 +17,6 @@ if (!exists("fname")) fname='test'
 oname = sprintf("%s.tex", fname)
 set output oname
 
-# rec = "04REC"
-# tstep = 70000
 
 infile1=sprintf("data/%s/mode01_pod_%07d.csv",rec,tstep)
 infile2=sprintf("data/%s/mode02_pod_%07d.csv",rec,tstep)
@@ -41,11 +39,6 @@ m45=sprintf("data/4_0REC/m4andm5_%07d.csv", tstep)
 
 
 set datafile separator ','
-
-
-
-lx = 40.0
-ly = 200.0
 
 set multiplot
 
@@ -79,9 +72,6 @@ set style line 120 lt 1 lw 4 ps 2 lc rgb '#c49c94' # brown
 set palette rgbformulae 22,13,-31
 
 
-# set palette defined (0 '#ffffff', 1 '#00008b', 2 '#2ca9e1', 3 '#008000', 4 '#c8c800', 5 '#ff0000', 6 '#ff00ff')
-
-
 set format '$%g$'
 
 set size ratio 1.5
@@ -90,10 +80,6 @@ set style fill solid 10
 set palette rgbformulae 22,13,-31
 set view map
 set pm3d
-# set pm3d interpolate 3,3
-
-# set palette defined (0 '#ffffff', 1 '#00008b', 2 '#2ca9e1', 3 '#008000', 4 '#c8c800', 5 '#ff0000', 6 '#ff00ff')
-
 
 adj = 2.0
 ev = 25

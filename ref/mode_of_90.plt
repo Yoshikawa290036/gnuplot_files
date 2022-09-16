@@ -16,23 +16,6 @@ set terminal epslatex standalone header \
 \\usepackage{amssymb, amsmath, bm}\n\
 \\usepackage{siunitx}\n \
 "
-# " \
-# \\usepackage{amssymb, amsmath, bm}\n \
-# \\usepackage{arev}\n \
-# \\usepackage[]{arevmath}\n \
-# \\usepackage{textcomp}\n \
-# \\usepackage{siunitx}\n \
-# \\DeclareMathSymbol{I}{\\mathalpha}{extraitalic}{30}\n \
-# \\DeclareMathSymbol{a}{\\mathalpha}{extraitalic}{50}\n \
-# \\DeclareMathSymbol{f}{\\mathalpha}{extraitalic}{55}\n \
-# \\DeclareMathSymbol{i}{\\mathalpha}{extraitalic}{58}\n \
-# \\DeclareMathSymbol{l}{\\mathalpha}{extraitalic}{61}\n \
-# \\DeclareMathSymbol{u}{\\mathalpha}{extraitalic}{70}\n \
-# \\DeclareMathSymbol{v}{\\mathalpha}{extraitalic}{71}\n \
-# \\DeclareMathSymbol{w}{\\mathalpha}{extraitalic}{72}\n \
-# \\DeclareMathSymbol{x}{\\mathalpha}{extraitalic}{73}\n \
-# \\sisetup{math-micro={\\usefont{T1}{phv}{m}{n}\\text{\\textmu}}}\n \
-# "
 
 set terminal epslatex size 3,2.25 standalone color solid 9
 
@@ -100,36 +83,13 @@ set palette defined (0 '#ffffff', 1 '#00008b', 2 '#2ca9e1', 3 '#008000', 4 '#c8c
 set key width 0.5 box opaque spacing 1.1 samplen 1.4 Left reverse
 set key left top
 
-####################################################################################################
-
 step = 1
 
-# set label 1 at graph 0,1.1 "aiueo" font "Times-Roman, 24"
 
 
 plot \
 infile1  every step using 1:2 axis x1y1 with linespoints ls 104 pt 6 title "up",\
 infile2  every step using 1:2 axis x1y1 with linespoints ls 105 pt 6 title "down",\
-# tau_up   every step axis x1y2 with errorbars ls 103 pt 6 title "up",\
-# tau_down every step axis x1y2 with errorbars ls 104 pt 6 title "down",\
-
-
-# plot \
-# infile1  every step using 1:2 axis x1y1 with linespoints ls 101 pt 6 title '\Large Number of modes',\
-# tau_up   every step axis x1y2 with errorbars ls 103 pt 6 title '\Large $T^*$ [-]',\
-
-# infile2  every step using 1:2 axis x1y1 with linespoints ls 102 pt 6 title "down",\
-# tau_down every step axis x1y2 with errorbars ls 104 pt 6 title "down",\
-
-# infile using 1:2 with lines ls 101
-
-
-
-####################################################################################################
 
 unset multiplot
 reset
-
-# aaa = sprintf("convert2 -alpha off -density 600 %s %s", out01, out02)
-
-# system(aaa)
