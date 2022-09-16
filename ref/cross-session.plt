@@ -78,11 +78,6 @@ set style fill solid 10
 set view map
 set pm3d
 
-# set pm3d interpolate 3,3
-# set pm3d interpolate 10, 10
-
-# set palette defined (0 '#ffffff', 1 '#00008b', 2 '#2ca9e1', 3 '#008000', 4 '#c8c800', 5 '#ff0000', 6 '#ff00ff')
-
 
 adj = 3.0
 ev = 25

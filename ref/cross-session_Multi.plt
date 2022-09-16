@@ -51,8 +51,6 @@ set style line 120 lt 1 lw 4 ps 2 lc rgb '#c49c94' # brown
 set palette rgbformulae 22,13,-31
 set palette defined ( 0 '#000090',1 '#000fff',2 '#0090ff',3 '#0fffee',4 '#ffffff',5 '#ffee00',6 '#ff7000',7 '#ee0000',8 '#7f0000')
 
-# set palette defined (0 '#ffffff', 1 '#00008b', 2 '#2ca9e1', 3 '#008000', 4 '#c8c800', 5 '#ff0000', 6 '#ff00ff')
-
 
 set format '$%g$'
 
@@ -62,11 +60,6 @@ set style fill solid 10
 # set palette rgbformulae 22,0,-31
 set view map
 set pm3d
-
-# set pm3d interpolate 1,1
-# set pm3d interpolate 10, 10
-
-# set palette defined (0 '#ffffff', 1 '#00008b', 2 '#2ca9e1', 3 '#008000', 4 '#c8c800', 5 '#ff0000', 6 '#ff00ff')
 
 lmar=0.05
 rmar=0.1

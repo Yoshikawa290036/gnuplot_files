@@ -48,21 +48,6 @@ set style line 118 lt 1 lw 4 ps 2 lc rgb '#f7b6d2' # orchid
 set style line 119 lt 1 lw 4 ps 2 lc rgb '#c7c7c7' # gray
 set style line 120 lt 1 lw 4 ps 2 lc rgb '#c49c94' # brown
 
-# set label 1 at screen 0.72,0.165 point ls 101 pt 3 ps 3
-# set label 2 at screen 0.72,0.12 point ls 102 pt 3 ps 3
-
-# set label 11 at screen 0.80,0.165 '{\LARGE US off}' front
-# set label 12 at screen 0.80,0.12 '{\LARGE US on}' front
-
-# set object 20 rect from screen 0.65,0.09 to screen 0.9,0.19 fc rgb '#FFFFFFFF' lw 2 back
-
-# set palette defined (0 '#999999',\
-                     1 '#00008b',\
-					 2 '#2ca9e1',\
-					 3 '#008000',\
-					 4 '#c8c800',\
-					 5 '#ff0000',\
-					 6 '#1a1a1a') positive
 
 
 set palette defined (0 '#ffffff', 1 '#00008b', 2 '#2ca9e1', 3 '#008000', 4 '#c8c800', 5 '#ff0000', 6 '#ff00ff')
