@@ -14,18 +14,11 @@ set border front
 set border lw 3
 set size ratio 1
 
-
-# unset border
-# unset key
-
 if (!exists("fname")) fname='test'
 # if (!exists("nn")) nn=0
 oname = sprintf("%s.tex", fname)
 set output oname
-
-
 set multiplot
-
 
 set style line 101 lt 1 lw 4 ps 2 lc rgb '#d62728' # red
 set style line 102 lt 1 lw 4 ps 2 lc rgb '#1f77b4' # blue
@@ -61,12 +54,7 @@ set format '$%g$'
 
 set size ratio 0.9
 set style fill solid 0.5
-
 set logscale xy
-
-
-
-####################################################################################################
 
 set lmargin screen 0.2
 set rmargin screen 1
@@ -74,13 +62,10 @@ set rmargin screen 1
 set tmargin screen 0.97
 set bmargin screen 0.14
 
-####################################################################################################
-
 set key width 1 box opaque spacing 1.5 samplen 1 Left reverse
 set key left bottom
 
 # unset key
-####################################################################################################
 
 set format x ''
 set xlabel '{$N_\theta$ [-]}' offset 0,0.4
