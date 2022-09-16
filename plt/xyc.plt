@@ -14,7 +14,6 @@ if (!exists("fname")) fname='test'
 oname = sprintf("%s.tex", fname)
 set output oname
 
-
 infile = sprintf("%s/%s.tsv", dire, fname)
 
 # set datafile separator ','
@@ -55,8 +54,7 @@ set view map
 set pm3d
 
 
-# set pm3d interpolate 10,10,1
-
+# set pm3d interpolate 10,10,
 rmax=2
 
 set xrange [-3:9]
