@@ -4,6 +4,7 @@
 shellscript を実行すると、pltディレクトリにある同名のスクリプトファイルがgnuplot上で実行され、texファイルを出力する。
 
 texファイルをコンパイルし、.epsファイルを生成する。epsファイルをImageMagickでpngファイルにコンバートし、imageディレクトリに画像を出力する。
+ImageMagick はデフォルトでは eps → png にconvert できないため /etc/ImageMagick-6/policy.xml を編集しておく。
 
 ## l2err.png
 ![l2err](https://user-images.githubusercontent.com/102783602/193715321-4945f7f0-7d40-4b38-99a0-393a5dd9dca4.png)
