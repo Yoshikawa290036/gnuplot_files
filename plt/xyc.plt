@@ -74,7 +74,9 @@ set ylabel '{\Large $y$ [-]}'
 set cblabel '{\Large $C$ [-]}'
 
 splot \
-infile using ($1):($2):($3) with pm3d
+infile using ($1):($2):($3) with pm3d ,\
+infile using ($1):(-$2):($3) with pm3d ,\
+
 
 unset multiplot
 reset
