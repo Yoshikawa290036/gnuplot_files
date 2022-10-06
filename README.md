@@ -16,7 +16,7 @@ ImageMagick はデフォルトでは eps → png にconvert できないため /
 ![vel](https://user-images.githubusercontent.com/102783602/193715338-9741ef69-4467-454d-830c-023ac4e08375.png)
 
 ## xyc.png
-![xyc](https://user-images.githubusercontent.com/102783602/193715345-607877d9-c99c-4f6c-8124-436d01a09df3.png)
+![xyc](https://user-images.githubusercontent.com/102783602/194197069-00c3b1ee-f6c6-4ba5-a380-d3b0fd94dc79.png)
 
 ## xyuvp.png
 ![xyuvp](https://user-images.githubusercontent.com/102783602/193715351-34858e42-4a13-4e8a-b7fa-2ee4ba142cc8.png)
