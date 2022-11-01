@@ -20,3 +20,6 @@ ImageMagick はデフォルトでは eps → png にconvert できないため /
 
 ## xyuvp.png
 ![xyuvp](https://user-images.githubusercontent.com/102783602/193715351-34858e42-4a13-4e8a-b7fa-2ee4ba142cc8.png)
+
+## potential.png
+![potential](https://user-images.githubusercontent.com/102783602/199200620-e197e727-da96-415a-8be3-b2b1e51cd559.png)
